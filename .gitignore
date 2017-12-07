@@ -31,3 +31,12 @@
 
 # "temporary" build files
 /target
+
+.idea
+.project
+.classpath
+.slcache
+/wrapper
+*.iml
+grailsw
+grailsw.bat
