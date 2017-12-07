@@ -10,6 +10,8 @@ class Event {
     Date dateCreated
     Date lastUpdated
 
+    static hasMany = [requests: Request]
+
     static constraints = {
         name nullable: false, blank: false
         fromDate nullable: false, validator: dateValidator
