@@ -18,6 +18,6 @@ class Event {
     }
 
     static def dateValidator = { value, object ->
-        object.fromDate.before(object.toDate)
+        object.fromDate.equals(object.toDate) || object.fromDate.before(object.toDate)
     }
 }
